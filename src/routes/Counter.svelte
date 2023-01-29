@@ -1,6 +1,13 @@
 <script lang="ts">
 	import { spring } from 'svelte/motion';
 
+	import {createStore} from 'effector';
+
+	const testStore =  createStore([]);
+
+	console.log('Test store SID:', testStore.sid)
+	console.log('Test store Short Name:', testStore.shortName)
+
 	let count = 0;
 
 	const displayed_count = spring();
